@@ -1,0 +1,86 @@
+@green: #53c060;
+@red: #ff8080;
+@orange: #ffdf80;
+
+.green {
+  color: @green;
+}
+
+.red {
+  color: @red;
+  &:hover, &:focus {
+    color: @red*0.8;
+  }
+}
+
+.noBorder {
+  border: none;
+}
+
+.formItem {
+  :global(.ant-form-item-label) {
+    text-align: left
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.rightAligned {
+  text-align: right;
+}
+
+.centerAligned {
+  text-align: center;
+}
+
+.coloredButton(@color: @green) {
+  background-color: @color;
+  color: white;
+  &:hover, &:focus {
+    background-color: @color*0.8;
+    color: white;
+    border-color: #dce6dc;
+  }
+}
+
+.greenButton {
+  .coloredButton()
+}
+
+.redButton {
+  .coloredButton(@red)
+}
+
+.orangeButton {
+  .coloredButton(@orange)
+}
+
+.unselectableText() {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+}
+
+.paragraph {
+  padding: 4px 10px;
+}
+
+.autocomplete {
+  width: 240px;
+  margin-right: 16px;
+}
+
+.label {
+  padding-left: 10px;
+  vertical-align: middle;
+  line-height: 32px;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}

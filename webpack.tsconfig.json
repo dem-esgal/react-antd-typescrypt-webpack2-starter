@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    },
+    "sourceMap": true,
+    "removeComments": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "preserveConstEnums": true,
+    "strictNullChecks":false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "outDir":"dist",
+    "jsx": "preserve",
+    "rootDir": "./src",
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useBabel": true,
+    "useCache": true,
+    "emitRequireType": false
+  },  
+  "exclude": [
+    "node_modules","test"
+  ]
+}
